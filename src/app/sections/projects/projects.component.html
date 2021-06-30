@@ -1,0 +1,24 @@
+<section id="projects" class="container mt-3">
+  <h2 class="h2">Portafolio</h2>
+  <hr />
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gap-3">
+      <div *ngFor="let item of [1]" class="card" style="width: 18rem">
+        <div class="card-header rounded"><img
+          src="assets/img/projects/Kaizet.png"
+          class="card-img-top"
+          alt="card-project"
+        /></div>
+        <div class="card-body">
+          <h5 class="card-title">Kaizet</h5>
+          <p class="card-text">
+            Creación de página web, dominio, host e indexación a google.
+          </p>
+          <button class="btn btn-primary" (click)="go('https://Kaizet.com')">
+            Conócela
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

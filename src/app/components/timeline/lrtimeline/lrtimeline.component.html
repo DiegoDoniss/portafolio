@@ -1,0 +1,15 @@
+<div class="timeline">
+  <div
+    *ngFor="let item of data; let i = index"
+    class="container-custom"
+    [ngClass]="{ left: i % 2 == 1, right: i % 2 == 1 }">
+    <div class="date">{{ item.date }}</div>
+    <i *ngIf="item.icon" class="icon" [ngClass]="item.icon"></i>
+    <div class="content">
+      <h2 class="h2">{{ item.title }}</h2>
+      <p>
+        {{ item.content }}
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div id="experience">
+  <h2>Experiencia</h2>
+  <hr>
+  <div class="main">
+    <div class="p" *ngFor="let ex of experience">
+      <div class="d-flex justify-content-between">
+        <div class="d-inline-block">
+          <h4 class="h4">{{ex.title}}</h4>
+          <p>{{ex.subTitle}}</p>
+        </div>
+        <div class="d-inline-block">{{ex.date}}</div>
+      </div>
+      <hr>
+      <p>{{ex.content}}</p>
+    </div>
+  </div>
+</div>

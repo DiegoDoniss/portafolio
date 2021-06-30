@@ -1,0 +1,44 @@
+<aside [ngClass]="{ 'mobile-nav-active': active }">
+  <!-- ======= Mobile nav toggle button ======= -->
+  <fa-icon
+    [icon]="menu"
+    class="mobile-nav-toggle d-xl-none"
+    (click)="side()"
+  ></fa-icon>
+  <!-- ======= Header ======= -->
+  <div id="header-sidenav" class="bg-secondary-gradient">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img
+          src="assets/img/diego 1.jpg"
+          alt=""
+          class="img-thumbnail rounded-circle"
+        />
+        <h1 class="text-light"><a>Diego Donis</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a
+            *ngFor="let red of redes"
+            [href]="red.url"
+            target="_blank"
+            class="text-light"
+            ><fa-icon [icon]="red.icon"></fa-icon
+          ></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul class="w-100">
+          <li *ngFor="let section of sections">
+            <a
+              [href]="section.url"
+              class="nav-link scrollto d-flex justify-content-between"
+              ><fa-icon [icon]="section.icon"></fa-icon>
+              <span class="text">{{ section.title }}</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- End Header -->
+</aside>

@@ -1,0 +1,15 @@
+<div id="skils">
+  <h2 class="h2">Conocimientos</h2>
+  <hr />
+  <div class="row gap-3">
+    <div *ngFor="let skil of skils" class="card rounded">
+      <div class="card-header bg-primary-gradient text-light rounded d-flex justify-content-between">
+        <fa-icon [icon]='skil.icon' [size]="'2x'"></fa-icon>
+        <h4 class="card-title d-inline-block">{{skil.title}}</h4>
+      </div>
+      <div class="card-body">
+        <ul class="row row-cols-2"><li *ngFor="let item of skil.content">{{item}}</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
