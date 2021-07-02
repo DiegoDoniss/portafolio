@@ -30,8 +30,8 @@ export class SidenavComponent implements OnInit {
     { title: 'Contactame', url: '#contact', icon: faEnvelopeOpen },
   ];
   redes = [
-    { icon: faFacebook, url: 'https://www.facebook.com/diego.donis3/' },
-    { icon: faLinkedin, url: 'www.linkedin.com/in/diego-donis' },
+    { icon: faFacebook, url: 'https://facebook.com/diego.donis3/' },
+    { icon: faLinkedin, url: 'https://linkedin.com/in/diego-donis' },
     { icon: faWhatsapp, url: 'https://wa.me/50245262624' },
   ];
 
