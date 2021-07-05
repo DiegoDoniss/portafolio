@@ -1,0 +1,6 @@
+{
+    "/api": {
+      "target": "https://apis.kaizet.com/",
+      "secure": true
+    }
+  }
