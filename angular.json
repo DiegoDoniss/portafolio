@@ -70,8 +70,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "nPort:build",
-            "proxyConfig": "./proxy.conf.json"
+            "browserTarget": "nPort:build"
           },
           "configurations": {
             "production": {
