@@ -13,7 +13,7 @@ export class ApisService {
   private base = 'https://apis.kaizet.com/';
   constructor(private http: HttpClient) {}
   sendEmail(body: mail) {
-    return this.http.post(this.base + 'php/mail', body, {
+    return this.http.post(this.base+'php/mail/index.php', body, {
       headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
     });
   }
