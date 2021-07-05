@@ -1,29 +1,41 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import emailjs, { EmailJSResponseStatus, init } from 'emailjs-com';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-
-  contact : FormGroup
-  constructor(private fb:FormBuilder) { 
+  contact: FormGroup;
+  constructor(private fb: FormBuilder) {
     this.contact = fb.group({
-      name:['', Validators.required],
-      tel:['', Validators.required],
-      email:['', Validators.required],
-      message:['', Validators.required]
-    })
+      name: ['', Validators.required],
+      tel: ['', Validators.required],
+      email: ['', Validators.required],
+      message: ['', Validators.required],
+    });
   }
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void {}
+  submit() {
+    init('user_O3Toc8nGLXbdAyC9a3v5n');
+    emailjs
+      .send('service_q0pfa24', 'template_mj30ts3', {
+        email: this.contact.value.email,
+        tel: this.contact.value.tel,
+        name: this.contact.value.name,
+        message: this.contact.value.message,
+      })
+      .then(
+        function (response) {
+          alert('mensaje enviado')
+        },
+        function (error) {
+          console.log('FAILED...', error);
+        }
+      );
+    this.contact.reset();
   }
-  submit(){
-    console.log(this.contact.value)
-    this.contact.reset()
-  }
-
 }

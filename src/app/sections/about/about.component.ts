@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { LRTimeline } from 'src/app/components/timeline/timelinemodels';
 
 @Component({
   selector: 'app-about',
@@ -8,11 +7,7 @@ import { LRTimeline } from 'src/app/components/timeline/timelinemodels';
 })
 export class AboutComponent implements OnInit {
 
-  timeline: LRTimeline[] =[
-    {date:'12/20/21',title:'probando plantilla',content:'lorem lorem lorem',},
-    {date:'12/20/21',title:'probando plantilla',content:'lorem lorem lorem',},
-    {date:'12/20/21',title:'probando plantilla',content:'lorem lorem lorem',},
-  ] 
+
   constructor() { }
 
   ngOnInit(): void {
