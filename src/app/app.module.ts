@@ -18,10 +18,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactComponent } from './sections/contact/contact.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
-<<<<<<< HEAD
-=======
-import { HttpClientModule } from "@angular/common/http";
->>>>>>> 3c870df492894382b622e86c2b775953c9d78246
 
 @NgModule({
   declarations: [
@@ -38,11 +34,7 @@ import { HttpClientModule } from "@angular/common/http";
     IconBlockComponent,
     ContactComponent,
   ],
-<<<<<<< HEAD
   imports: [BrowserModule, AppRoutingModule, TimelineModule, FontAwesomeModule, ReactiveFormsModule],
-=======
-  imports: [BrowserModule, AppRoutingModule, TimelineModule, FontAwesomeModule, ReactiveFormsModule,HttpClientModule],
->>>>>>> 3c870df492894382b622e86c2b775953c9d78246
   providers: [{provide:LocationStrategy, useClass:HashLocationStrategy}],
   bootstrap: [AppComponent],
 })
