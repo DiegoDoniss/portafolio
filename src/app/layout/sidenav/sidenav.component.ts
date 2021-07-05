@@ -31,7 +31,7 @@ export class SidenavComponent implements OnInit {
   ];
   redes = [
     { icon: faFacebook, url: 'https://www.facebook.com/diego.donis3/' },
-    { icon: faLinkedin, url: 'www.linkedin.com/in/diego-donis' },
+    { icon: faLinkedin, url: 'https://linkedin.com/in/diego-donis' },
     { icon: faWhatsapp, url: 'https://wa.me/50245262624' },
   ];
 

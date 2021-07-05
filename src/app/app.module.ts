@@ -17,6 +17,7 @@ import { IconBlockComponent } from './components/icon-block/icon-block.component
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactComponent } from './sections/contact/contact.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     IconBlockComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, TimelineModule, FontAwesomeModule],
+  imports: [BrowserModule, AppRoutingModule, TimelineModule, FontAwesomeModule, ReactiveFormsModule],
   providers: [{provide:LocationStrategy, useClass:HashLocationStrategy}],
   bootstrap: [AppComponent],
 })
