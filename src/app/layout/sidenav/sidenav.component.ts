@@ -27,7 +27,7 @@ export class SidenavComponent implements OnInit {
     { title: 'Acerca de mi', url: '#about', icon: faAddressCard },
     { title: 'Servicios', url: '#services', icon: faUserTie },
     { title: 'Portafolio', url: '#projects', icon: faLaptopCode },
-    { title: 'Contactame', url: '#contact', icon: faEnvelopeOpen },
+    { title: 'Contactame', url: '#contact', icon: faEnvelopeOpen }
   ];
   redes = [
     { icon: faFacebook, url: 'https://facebook.com/diego.donis3/' },
