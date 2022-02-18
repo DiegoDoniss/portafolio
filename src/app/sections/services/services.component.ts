@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faBookReader, faDatabase, faDigitalTachograph, faTools } from '@fortawesome/free-solid-svg-icons';
+import { faBookReader, faDigitalTachograph, faTools } from '@fortawesome/free-solid-svg-icons';
 import { faJava } from '@fortawesome/free-brands-svg-icons'
 
 

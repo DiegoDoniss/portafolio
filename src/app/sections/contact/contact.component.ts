@@ -20,22 +20,6 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {}
   submit() {
-    init('user_uRIJMnOAKQkzeD4GtBuWh');
-    emailjs
-      .send('service_xr8m56i', 'diego', {
-        email: this.contact.value.email,
-        tel: this.contact.value.tel,
-        name: this.contact.value.name,
-        message: this.contact.value.message,
-      })
-      .then(
-        function (response: any) {
-          alert('mensaje enviado');
-        },
-        function (error: any) {
-          console.log('FAILED...', error);
-        }
-      );
-    this.contact.reset();
+    
   }
 }
