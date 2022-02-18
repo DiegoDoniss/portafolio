@@ -9,6 +9,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 export class FooterComponent implements OnInit {
 
   whats = faWhatsapp
+  year=new Date().getFullYear()
   constructor() { }
 
   ngOnInit(): void {
