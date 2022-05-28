@@ -1,0 +1,50 @@
+*{
+    font-family: "Inconsolata";
+  }
+  
+  $primary: #791a17;
+  $secondary: #d04a35;
+  $light: #fcede5;
+  $dark: #7e6d68;
+  $theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "light": $light,
+    "dark": $dark,
+  );
+  
+  $body-bg: #fcede5;
+  $body-color: #7e6d68;
+  
+  #main {
+    margin-left: 300px;
+  }
+  
+  @media (max-width: 1199px) {
+    #header {
+      left: -300px;
+    }
+    #main {
+      margin-left: 0;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    font-family: "Montserrat";
+  }
+  .bg-primary-gradient {
+    background: linear-gradient(darken($primary, 5), lighten($primary, 5));
+  }
+  .bg-secondary-gradient {
+    background: linear-gradient(darken($secondary, 5), lighten($secondary, 5));
+  }
