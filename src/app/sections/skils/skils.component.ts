@@ -9,13 +9,14 @@ import { faAngular, faHtml5, faLinux, faPython, faRedhat, faWordpress } from "@f
 })
 export class SkilsComponent implements OnInit {
   skils = [
-    { icon: faHtml5, title: 'Front-end', content: ['html-5', 'css-3', 'javascript', 'typescript', 'sass', 'bootstrap', 'tailwind'] },
-    { icon: faPython, title: 'Back-end', content: ['Javascript', 'Php', 'C#', 'Python', 'Go'] },
-    { icon: faAngular, title: 'Frameworks', content: ['Angular', 'Flask', '.Net Core', 'React'] },
-    { icon: faDatabase, title: 'Bases de datos', content: ['SqlServer', 'MariaDB', 'Posgress', 'MongoDB'] },
+    { icon: faHtml5, title: 'Front-end', content: ['javascript', 'typescript', 'sass', 'bootstrap','Tailwind'] },
+    { icon: faPython, title: 'Back-end', content: ['Nodejs', 'Deno', 'C#', 'Python','Go'] },
+    { icon: faAngular, title: 'Frameworks', content: ['Angular', 'Flask', '.Net Core', 'React','Nestjs'] },
+    { icon: faDatabase, title: 'Bases de datos', content: ['SqlServer', 'MariaDB', 'MongoDB'] },
     { icon: faLinux, title: 'Sistemas Operativos', content: ['Windows', 'Linux'] },
-    { icon: faCloud, title: 'Computacion en la nube', content: ['EC2', 'RDS', 'LAMDA', 'Server Less', 'Firebase', 'Azure', 'Digital Ocean', 'NGINX', 'Apache'] },
-    { icon: faWordpress, title: 'Diseño web', content: ['Wordpress', 'Cpanel'] },
+    { icon: faCloud, title: 'Computacion en la nube', content: ['EC2', 'RDS', 'LAMDA', 'Server Less', 'Firebase', 'Azure','Digital Ocean'] },
+    { icon: faWordpress, title: 'Diseño web', content: ['Wordpress', 'Cpanel', 'Apache', 'Nginx'] },
+
   ];
   constructor() { }
 
