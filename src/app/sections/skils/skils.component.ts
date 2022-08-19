@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faCloud, faCoffee, faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faCloud, faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faAngular, faHtml5, faLinux, faPython, faRedhat, faWordpress } from "@fortawesome/free-brands-svg-icons";
 
 @Component({
@@ -14,8 +14,9 @@ export class SkilsComponent implements OnInit {
     { icon: faAngular, title: 'Frameworks', content: ['Angular', 'Flask', '.Net Core', 'React','Nestjs'] },
     { icon: faDatabase, title: 'Bases de datos', content: ['SqlServer', 'MariaDB', 'MongoDB'] },
     { icon: faLinux, title: 'Sistemas Operativos', content: ['Windows', 'Linux'] },
-    { icon: faCloud, title: 'Computacion en la nube', content: ['EC2', 'RDS', 'LAMDA', 'Server Less', 'Firebase', 'Azure'] },
+    { icon: faCloud, title: 'Computacion en la nube', content: ['EC2', 'RDS', 'LAMDA', 'Server Less', 'Firebase', 'Azure','Digital Ocean'] },
     { icon: faWordpress, title: 'Diseño web', content: ['Wordpress', 'Cpanel', 'Apache', 'Nginx'] },
+
   ];
   constructor() { }
 
